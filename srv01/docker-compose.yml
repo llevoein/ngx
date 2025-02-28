@@ -1,0 +1,28 @@
+services:
+#  httpbin:
+#    image: kennethreitz/httpbin
+#    command: ["gunicorn","-b","0.0.0.0:80","httpbin:app","-k","gevent","--log-level","debug"]
+#    deploy:
+#      mode: replication
+#      replicas: 2
+  
+#  netcat:
+#    image: subfuzion/netcat
+#    container_name: ng-netcat
+#    command: ["-vkl","8888"]
+  web:
+#    image: fabiocicerchia/nginx-lua:1.27.4-ubuntu24.04
+#    depends_on: [httpbin, netcat]
+#    image: openresty/openresty:alpine-fat
+    build:
+      context: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "./data/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro"
+      - "./data/conf.d:/etc/nginx/conf.d:ro"
+      - "./data/cert:/etc/ssl/certs:ro"
+      - "./data/includes:/etc/nginx/includes:ro"
+      - "./data/ui:/var/www/"
+#      - "/tmp/cache/nginx:/tmp/cache/nginx:rw"

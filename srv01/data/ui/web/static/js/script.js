@@ -1,0 +1,106 @@
+// Массив с путями к изображениям
+const images = [
+    "../img/massive/Image1.jpg",
+    "../img/massive/Image2.jpg",
+    "../img/massive/Image3.jpg",
+    "../img/massive/Image4.jpg",
+    "../img/massive/Image5.jpg",
+    "../img/massive/Image6.jpg",
+    "../img/massive/Image7.jpg",
+    "../img/massive/Image8.jpg",
+    "../img/massive/Image9.jpg",
+    "../img/massive/Image10.jpg",
+    "../img/massive/Image11.jpg",
+    "../img/massive/Image12.jpg",
+    "../img/massive/Image13.jpg",
+    "../img/massive/Image14.jpg",
+    "../img/massive/Image15.jpg",
+    "../img/massive/Image16.jpg",
+    "../img/massive/Image17.jpg",
+    "../img/massive/Image18.jpg",
+    "../img/massive/Image19.jpg",
+    "../img/massive/Image20.jpg",
+    "../img/massive/Image21.jpg",
+    "../img/massive/Image22.jpg",
+    "../img/massive/Image23.jpg",
+    "../img/massive/Image24.jpg",
+    "../img/massive/Image25.jpg",
+    "../img/massive/Image26.jpg",
+    "../img/massive/Image27.jpg",
+    "../img/massive/Image28.jpg",
+    "../img/massive/Image29.jpg",
+    "../img/massive/Image30.jpg",
+    "../img/massive/Image31.jpg",
+    "../img/massive/Image32.jpg",
+    "../img/massive/Image33.jpg",
+    "../img/massive/Image34.jpg",
+    "../img/massive/Image35.jpg",
+    "../img/massive/Image36.jpg",
+    "../img/massive/Image37.jpg",
+    "../img/massive/Image38.jpg",
+    "../img/massive/Image39.jpg",
+    "../img/massive/Image40.jpg",
+    "../img/massive/Image41.jpg",
+    "../img/massive/Image42.jpg",
+    "../img/massive/Image43.jpg",
+    "../img/massive/Image44.jpg",
+    "../img/massive/Image45.jpg",
+    "../img/massive/Image46.jpg",
+    "../img/massive/Image47.jpg",
+    "../img/massive/Image48.jpg",
+    "../img/massive/Image49.jpg",
+    "../img/massive/Image1.jpeg",
+    "../img/massive/Image2.jpeg",
+    "../img/massive/Image3.jpeg",
+    "../img/massive/Image4.jpeg",
+    "../img/massive/Image5.jpeg",
+    "../img/massive/Image6.jpeg",
+    "../img/massive/Image7.jpeg",
+    "../img/massive/Image8.jpeg",
+    "../img/massive/Image9.jpeg",
+    "../img/massive/Image10.jpeg",
+    "../img/massive/Image11.jpeg",
+    "../img/massive/Image12.jpeg",
+    "../img/massive/Image13.jpeg",
+    "../img/massive/Image14.jpeg",
+    "../img/massive/Image15.jpeg",
+    "../img/massive/Image16.jpeg",
+    "../img/massive/Image17.jpeg",
+    "../img/massive/Image18.jpeg",
+    "../img/massive/Image19.jpeg",
+    "../img/massive/Image20.jpeg",
+    "../img/massive/Image21.jpeg",
+    "../img/massive/Image22.jpeg",
+    "../img/massive/Image23.jpeg",
+    "../img/massive/Image24.jpeg",
+    "../img/massive/Image25.jpeg",
+    "../img/massive/Image26.jpeg",
+    "../img/massive/Image27.jpeg",
+    "../img/massive/Image28.jpeg",
+    "../img/massive/Image29.jpeg",
+    "../img/massive/Image30.jpeg",
+    "../img/massive/Image31.jpeg",
+    "../img/massive/Image32.jpeg",
+    "../img/massive/Image33.jpeg",
+    "../img/massive/Image34.jpeg",
+    "../img/massive/Image35.jpeg",
+    "../img/massive/Image36.jpeg",
+    "../img/massive/Image37.jpeg",
+    // Добавьте больше путей по мере необходимости
+];
+
+// Получаем контейнер для галереи
+const gallery = document.getElementById("gallery");
+
+// Функция для добавления изображений в галерею
+function loadImages() {
+    images.forEach(imagePath => {
+        const imgElement = document.createElement("img");
+        imgElement.src = imagePath;
+        imgElement.alt = "Описание изображения"; // Можно динамически генерировать описание
+        gallery.appendChild(imgElement);
+    });
+}
+
+// Загружаем изображения при загрузке страницы
+window.onload = loadImages;
