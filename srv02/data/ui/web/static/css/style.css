@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+/*    font-size: 18px;*/
+    font-family: "Ubuntu Mono", monospace;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    line-height: 1.5;
+    background-color: #000;
+    color: #34495E;
+    overflow-y: scroll;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+/*    animation-name: changer_bgi;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;*/
+    justify-content: center;
+    align-items: center;
+
+
+}
+.img_cover{
+    background-image: url(../img/1.gif);
+    /*transition: background-image 2s ease-in-out;*/
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+}
+.remote_addr{
+    text-align: center;
+}
+
+.remote_addr p {
+    color: #333;
+    font-size: 40px;
+}
+
+.remote_country {
+    color: #1c521e;
+    text-align: center;
+}
+
+.remote_city {
+    color: #1c521e;
+    text-align: center;
+}
+
+.remote_text{
+    font-size: 5px;
+    color: #333;
+    text-align: center;
+}
