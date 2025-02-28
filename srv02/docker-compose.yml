@@ -13,9 +13,9 @@ services:
   web:
 #    image: fabiocicerchia/nginx-lua:1.27.4-ubuntu24.04
 #    depends_on: [httpbin, netcat]
-#    image: llevoein/doc-web
-    build:
-      context: .
+    image: llevoein/doc-web
+#    build:
+#      context: .
     ports:
       - "80:80"
       - "443:443"
