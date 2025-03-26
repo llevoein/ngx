@@ -7,8 +7,9 @@ ngx lua preview
 
 [ https://evilimg.run.place/img takes images from the site https://evilive.run.place/img and caches them locally ]
 
-[ I made the following changes, 
-  1. 401 code handler. [ https://evilive.run.place/401.html ]
+[ I made the following changes:
+  *  401 code handler. [ https://evilive.run.place/401.html ]
 
-  3. added file https://github.com/llevoein/ngx/blob/main/srv02/data/conf.d/lua/checker.lua
-which adds logic for parsing image downloads and caching ]
+  *  added file https://github.com/llevoein/ngx/blob/main/srv02/data/conf.d/lua/checker.lua
+which adds logic for parsing image downloads and caching.
+]
