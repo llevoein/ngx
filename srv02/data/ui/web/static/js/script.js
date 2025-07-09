@@ -1,4 +1,3 @@
-// Массив с путями к изображениям
 const images = [
     "../img/massive/Image1.jpg",
     "../img/massive/Image2.jpg",
@@ -86,21 +85,14 @@ const images = [
     "../img/massive/Image35.jpeg",
     "../img/massive/Image36.jpeg",
     "../img/massive/Image37.jpeg",
-    // Добавьте больше путей по мере необходимости
 ];
-
-// Получаем контейнер для галереи
 const gallery = document.getElementById("gallery");
-
-// Функция для добавления изображений в галерею
 function loadImages() {
     images.forEach(imagePath => {
         const imgElement = document.createElement("img");
         imgElement.src = imagePath;
-        imgElement.alt = "Описание изображения"; // Можно динамически генерировать описание
+        imgElement.alt = "Описание изображения";
         gallery.appendChild(imgElement);
     });
 }
-
-// Загружаем изображения при загрузке страницы
 window.onload = loadImages;
