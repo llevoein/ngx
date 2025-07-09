@@ -8,13 +8,13 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Расстояние между изображениями */
+    gap: 10px;
     padding: 10px;
 }
 
 .gallery img {
-    flex: 1 1 calc(25% - 10px); /* 25% ширины контейнера минус отступы */
-    max-width: calc(25% - 10px); /* 25% ширины контейнера минус отступы */
+    flex: 1 1 calc(25% - 10px);
+    max-width: calc(25% - 10px);
     height: auto;
-    object-fit: cover; /* Сохраняет пропорции изображения */
+    object-fit: cover;
 }
